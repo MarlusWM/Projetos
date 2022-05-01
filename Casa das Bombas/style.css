@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 :root {
     --cor0: #065CB3;
@@ -13,12 +13,70 @@
 
     --fonte-padrao: 'Noto Serif', serif;
     --fonte-subtítulos: 'Martel Sans', sans-serif , Arial;
-    --fonte-títulos:'Cinzel', serif , Verdana;
-
+    --fonte-títulos:'Michroma', sans-serif;
 }
+
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
+
+header {    
+    width: 100%;        
+    background-image: url('Imagens editadas/banner4.jpg');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 1px 1px 5px black;
+    
+}
+
+header > h1 {    
+    font-family: var(--fonte-títulos);
+    font-size: 4em;
+    text-shadow: 2px 2px 5px #065CB3;
+    text-align: center;
+    color: white;
+}
+
+.clima {    
+    width: 150px;
+    height: 50px;
+    overflow: auto;
+    margin-left: 90vw;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    
+}
+
+#menu {
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+nav > a {
+    font-family: var(--fonte-subtítulos);
+    transition-duration: 1s;
+    font-size: 1.0em;
+    padding: 10px;
+    padding-bottom: 0px;    
+    background-color: var(--cor0);
+    border-radius: 10px 10px 0px 0px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+    background-color: #9ECFFF;
+}
