@@ -22,17 +22,20 @@
     padding: 0px;
 }
 
+body {
+    background-image: linear-gradient(white, #9ECFFF,  #4DA4FA, #065CB3);
+    background-repeat:no-repeat;
+}
 
 header {    
     width: 100%;        
-    background-image: url('Imagens editadas/banner4.jpg');
+    background-image: url('Imagens editadas/banner3.jpg');
     background-position: center center;
     background-size: cover;
-    box-shadow: 1px 1px 5px black;
-    
 }
 
-header > h1 {    
+header > h1 {
+    transition: 1s;    
     font-family: var(--fonte-títulos);
     font-size: 4em;
     text-shadow: 2px 2px 5px #065CB3;
@@ -41,20 +44,19 @@ header > h1 {
 }
 
 .clima {    
-    width: 150px;
-    height: 50px;
+    width: 5vw;
+    height:3vw;
     overflow: auto;
     margin-left: 90vw;
     margin-top: 10px;
     cursor: pointer;
-    
-    
+    flex-wrap: wrap;
 }
 
 #menu {
     text-align: center;
     margin-top: 150px;
-    
+    padding-bottom: 5px;
 }
 
 nav > a {
@@ -63,10 +65,10 @@ nav > a {
     font-size: 1.0em;
     padding: 10px;
     padding-bottom: 0px;    
-    background-color: var(--cor0);
-    border-radius: 10px 10px 0px 0px;
     text-decoration: none;
     color: white;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgba(0, 0, 0, 0.347);
     
 }
 
@@ -75,8 +77,43 @@ nav a:hover {
     color: var(--cor2);
 }
 
-main {
+article > h1 {    
+    background-color: var(--cor2);
+    font-size: 2.5em;
     text-align: center;
     padding: 50px;
-    background-color: #9ECFFF;
+    
 }
+
+.container {
+    background-color: white;
+    max-width: 75%;
+    height: 800px;
+    margin-left: 10%;
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px var(--cor0);
+}
+
+ul{    
+    columns: 3;
+    list-style-position: inside;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+li > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0.1px solid var(--cor0);
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
