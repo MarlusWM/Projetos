@@ -60,6 +60,19 @@ header > h1 {
     padding-bottom: 5px;
 }
 
+.contato {
+    columns: 2;
+    margin: 20px;
+}
+
+#informacao {
+    display: inline-block;
+}
+
+#maps {
+    outline: black solid 1px;
+}
+
 nav > a {
     font-family: var(--fonte-subtítulos);
     transition-duration: 1s;
