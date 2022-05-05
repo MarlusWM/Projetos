@@ -30,10 +30,11 @@ body {
 
 header {    
     width: 100%;
-    background-image: url('Imagens editadas/banner3g.jpg');
+    background-image: url('Imagens editadas/banner3.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
+    border: 1px solid black;
 }
 
 header > h1 {
