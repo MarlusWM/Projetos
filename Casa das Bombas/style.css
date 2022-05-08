@@ -29,8 +29,9 @@ body {
 }
 
 header {    
-    width: 100%;
-    background-image: url('Imagens editadas/banner3.jpg');
+    width: auto;
+    min-height: 100vh;
+    background-image: url('Imagens editadas/banner2.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -40,10 +41,12 @@ header {
 header > h1 {
     max-width: 80%;
     margin-inline: auto;
+    margin-top: 200px;
     font-family: var(--fonte-títulos);
-    font-size: calc(2.5em + 2.5vw);
-    text-shadow: var(--cor0) 2px 2px 5px;
-    padding-inline: 10px;
+    font-size: calc(2em + 2vw);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px black;
+    padding-inline: 15px;
     color: white;
     background-color: rgba(0, 0, 0, 0.338);
     border-radius: 30px;
@@ -55,13 +58,13 @@ header > h1 {
 }
 
 .extra {
-    margin-left: 90%;
+    margin-left: 80%;
     display: inline-block;
 }
 
 .clima {    
     width: 50px;
-    height:50px;
+    height: 50px;
     padding: 5px;
     margin-top: 10px;
     margin-right: 5px;
@@ -75,7 +78,7 @@ header > h1 {
 }
 
 @keyframes myothermove {
-from {top: 200px;}
+from {top: 400px;}
 to {top: 0px;}
 }
 
@@ -109,7 +112,7 @@ to {top: 0px;}
 
 #menu {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 45vh;
     padding-bottom: 5px;
 }
 
@@ -297,6 +300,25 @@ li {
 
 p {
     padding-bottom: 20px;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d365a5;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
 }
 
 footer {
