@@ -30,7 +30,7 @@ body {
 
 header {    
     width: auto;
-    min-height: 100vh;
+    height: auto;
     background-image: url('Imagens editadas/banner2.jpg');
     background-position: center;
     background-size: cover;
@@ -38,10 +38,19 @@ header {
     border: 1px solid black;
 }
 
+.extra {
+    margin-left: 80%;
+    display: inline-block;
+}
+
+.extra > a {
+    text-decoration: none;
+}
+
 header > h1 {
     max-width: 80%;
     margin-inline: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     font-family: var(--fonte-títulos);
     font-size: calc(2em + 2vw);
     letter-spacing: 3px;
@@ -57,20 +66,15 @@ header > h1 {
     animation-duration: 5s;
 }
 
-.extra {
-    margin-left: 80%;
-    display: inline-block;
-}
-
 .clima {    
     width: 50px;
     height: 50px;
     padding: 5px;
     margin-top: 10px;
-    margin-right: 5px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.518);
     border-radius: 50px;
+    text-decoration: none;
 
     position: relative;
     animation-name: myothermove;
@@ -78,7 +82,7 @@ header > h1 {
 }
 
 @keyframes myothermove {
-from {top: 400px;}
+from {top: 150px;}
 to {top: 0px;}
 }
 
@@ -112,11 +116,11 @@ to {top: 0px;}
 
 #menu {
     text-align: center;
-    margin-top: 45vh;
-    padding-bottom: 5px;
+    margin-top: 250px;
+    margin-bottom: 10px;
 }
 
-nav > a {
+#menu nav > a {
     font-family: var(--fonte-subtítulos);
     transition-duration: 1s;
     font-size: 1.0em;
@@ -308,7 +312,7 @@ p {
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d365a5;
+    background-color: #25d365;
     color: #fff;
     border-radius: 50px;
     text-align: center;
