@@ -1,2 +1,2 @@
 # Projetos
-Projetos de sites desenvolvidos
+Projetos de sites desenvolvidos e em desenvolvimento.
