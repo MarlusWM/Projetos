@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-body:'Roboto', sans-serif;
+    --font-p: 'Roboto Mono', monospace;
+    --cor-azul: #364fc7;
+    --cor-laranja: #FF7502;
+}
+
+body {
+    width: auto;
+    height: 100vh;
+    background-image: url(./imagens/rocket.jpg);
+    /*Foto de Matheus Bertelli*/
+    background-size: 100% 400%;
+    animation: backgroundTransition 45s ease-in-out infinite;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: var(--font-body);
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 10%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.container > a > img:hover {
+    background-color: var(--cor-azul);
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--cor-laranja);
+    padding: 4px;
+    height: 300px;
+    width: 300px;
+}
+
+.holder {
+    text-shadow:1px 1px 30px var(--cor-laranja);
+    margin: 24px 0px 50px 0px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.holder > p > a {
+    font-size: 18px;
+    text-shadow: 1px 1px 15px var(--cor-laranja);
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    height: 60px;
+    justify-content: center;
+    margin-top: 16px;
+    background-color: var(--cor-laranja);
+    border-radius: 6px;
+}
+
+.imgLink {
+    width: 16px;
+    margin: 20px 0px 0px;
+}
+
+li:hover {
+    background-color: var(--cor-azul);
+    transition: 400ms;
+}
+
+ul > li > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--cor-laranja);
+    text-decoration: none;
+    border-radius: 5%;
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+footer > p > a {
+    color: var(--cor-laranja);
+    text-decoration: none;
+}

@@ -2,18 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 
 :root {
-    --cor0: #065CB3;
-    --cor1: #4DA4FA;
-    --cor2: #9ECFFF;
-    --cor3: #AD8745;
-    --cor4: #FAE0B4;
+    --cor0: #003366;
+    --cor1: #0053A6;
+    --cor2: #0066CC;
+    --cor3: #0073E6;
+    --cor4: #0079F2;
 
     --fonte-padrao: 'Noto Serif', serif;
     --fonte-subtítulos: 'Martel Sans', sans-serif , Arial;
-    --fonte-títulos:'Michroma', sans-serif;
+    --fonte-títulos: cursive;
 }
 
 
@@ -30,65 +30,86 @@ body {
 
 header {    
     width: auto;
-    height: auto;
+    min-height: 100vh;
     background-image: url('Imagens editadas/banner2.jpg');
-    background-position: center;
+    background-position: absolute;
     background-size: cover;
     text-align: center;
-    border: 1px solid black;
+    display: block;
+}
+
+.cabecalho {
+    background-color: var(--cor0);
+}
+
+.menu {
+    border: 10px solid black;
+}
+
+.menu nav > a {
+    font-family: var(--fonte-subtítulos);
+    transition-duration: 1s;
+    font-size: 1.0rem;
+    padding-inline: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu nav a:hover {
+    color: black;
 }
 
 .extra {
     margin-left: 80%;
     display: inline-block;
+    border: 10px solid black;
 }
 
 .extra > a {
     text-decoration: none;
 }
 
+.clima {    
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.518);
+    border-radius: 50p;
+    text-decoration: non;
+}
+
+.clima:hover {
+    background-color: var(--cor0);
+}
+
 header > h1 {
     max-width: 80%;
     margin-inline: auto;
-    margin-top: 150px;
+    margin-top: 25vh;
     font-family: var(--fonte-títulos);
     font-size: calc(2em + 2vw);
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px black;
     padding-inline: 15px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.338);
+    /*background-color: rgba(0, 0, 0, 0.338);*/
     border-radius: 30px;
     display: inline-block;
 
+    /*animacao titulo
     position: relative;
     animation-name: myothermove;
-    animation-duration: 5s;
+    animation-duration: 5s;*/
 }
 
-.clima {    
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.518);
-    border-radius: 50px;
-    text-decoration: none;
-
-    position: relative;
-    animation-name: myothermove;
-    animation-duration: 5s;
-}
-
-@keyframes myothermove {
+/* animacao da logo*/
+/*@keyframes myothermove {
 from {top: 150px;}
 to {top: 0px;}
-}
+}*/
 
-.clima:hover {
-    background-color: var(--cor0);
-}
 
 .contato {
     margin: 5%;
@@ -114,47 +135,23 @@ to {top: 0px;}
     box-shadow: 0px 0px 5px black;
 }
 
-#menu {
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 10px;
-}
-
-#menu nav > a {
-    font-family: var(--fonte-subtítulos);
-    transition-duration: 1s;
-    font-size: 1.0em;
-    padding: 10px;
-    padding-bottom: 0px;    
-    text-decoration: none;
-    color: white;
-    box-shadow: 1px 1px 5px black;
-    background-color: rgba(0, 0, 0, 0.347);
-    
-}
-
-nav a:hover {
-    background-color: var(--cor0);
-    color: var(--cor2);
-}
-
-article {
+/*article {
     margin-top: 50px;
     background-color: white;
     max-width: 80%;
     min-height: 1200px;
     margin-left: 10%;
     border-radius: 10px;
-}
+}*/
 
 article > h1 {    
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     /*background-image: linear-gradient(rgb(244, 244, 244) 10%, var(--cor2));*/
     font-size: 2.5rem;
     font-family: var(--fonte-padrao);
     text-align: center;
-    padding: 50px;
-    border-radius: 10px 10px 0px 0px;    
+    color: white;
+    padding: 50px;   
 }
 
 .area {
@@ -176,7 +173,6 @@ article > h1 {
 
 .zoom {    
     border-radius: 10px;
-    border: 0.1px solid var(--cor4);
 
     position: absolute;
     inset: 0;
@@ -191,14 +187,15 @@ article > h1 {
 }
 
 .txtcards {
-    width: 84%;
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
     font-family: var(--fonte-padrao);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.799);
+    color: var(--cor1);
     position: absolute;
     padding: 5px;
-    border-left: 15px solid white;
-    border-right: var(--cor0) 15px solid;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px10px 0px 10px;
     text-align: center;
 
 }
@@ -311,7 +308,7 @@ p {
     width: 60px;
     height: 60px;
     bottom: 40px;
-    right: 40px;
+    right: 10px;
     background-color: #25d365;
     color: #fff;
     border-radius: 50px;
@@ -328,8 +325,13 @@ p {
 footer {
     width: 100%;
     height: 8vh;
+    background-color: var(--cor2);
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.7em;
     text-align: center;
+}
+
+footer > p {
+    padding: 10px;
 }
